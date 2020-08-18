@@ -10,21 +10,20 @@ const assertEquals = function(actual, expected) {
 };
 
 const eqArrays = function(myArr, myArrTwo) {
-  for(let i = 0; i < myArr.length; i++) {
-    if(myArr[i] !== myArrTwo[i]) {
+  for (let i = 0; i < myArr.length; i++) {
+    if (myArr[i] !== myArrTwo[i]) {
       return false;
     }
   }
   return true;
-}
+};
 
-let a = [1,2,3];
-let b = [1,2,3];
-let c = [3,4,5];
-let d = ["1", "2", "3"]
-let e = ["1", "2", "3"]
+let a = [1, 2, 3];
+let b = [1, 2, 3];
+let d = ["1", "2", "3"];
+let e = ["1", "2", "3"];
 let f = ["1", "2", 3];
 
 console.log(eqArrays(d, e));
 console.log(eqArrays(e, f));
-console.log(assertEquals(eqArrays(a,b), true));
+console.log(assertEquals(eqArrays(a, b), true));
