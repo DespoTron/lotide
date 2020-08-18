@@ -16,12 +16,12 @@ const assertEquals = function(actual, expected) {
 
 
 const head = function(myArr)  {
-  if(!myArr) {
+  if (!myArr) {
     return undefined;
   } else {
     return myArr[0];
   }
-}
+};
 assertEquals(head([5,6,7]), 5);
 assertEquals(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEquals(head([]), 5);
